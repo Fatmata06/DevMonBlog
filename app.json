@@ -23,6 +23,25 @@
       "nom": "Astou",
       "email": "astou@gmail.com",
       "mdp": "astou"
+    },
+    {
+      "nom": "Serignebi",
+      "email": "serignebi@gmail.com",
+      "mdp": "serignebi",
+      "id": "P6gKgHg1-go"
+    },
+    {
+      "nom": "fatmata",
+      "email": "assane@gmail.com",
+      "mdp": "&aaa",
+      "id": "1_2xIRGxocs"
+    },
+    {
+      "nom": "mamy",
+      "email": "mamy@gmail.com",
+      "mdp": "mamy",
+      "id": "oH8IzqcmSag"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

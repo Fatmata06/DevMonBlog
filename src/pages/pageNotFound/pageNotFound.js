@@ -1,5 +1,5 @@
 
 function notfound(){
-    return `404 Page Introuvable `;
+    return `<img  src="public/images/notfound.svg" alt="">`;
 }
 export{notfound}

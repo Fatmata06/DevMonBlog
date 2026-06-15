@@ -52,7 +52,7 @@ function connexion() {
 
 
     return `
-    <section id="page-connexion" class=" w-full flex flex-wrap  justify-center">
+    <section id="page-connexion" class=" w-full flex flex-wrap   justify-center">
         <div class="w-[80%] min-h-[50rem] flex-wrap flex bg-[#FAFAFA]  rounded-2xl overflow-hidden">
             <div class="w-2/5 bg-[#00B4D8] flex items-center justify-center">
                 <img class="w-[25rem]" src="public/images/connexion.svg" alt="Image Connexion">

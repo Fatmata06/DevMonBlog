@@ -1,0 +1,29 @@
+{
+  "Users": [
+    {
+      "id": "1",
+      "nom": "fatmata",
+      "email": "nfatmata614@gmail.com",
+      "mdp": "fatmata"
+    },
+    {
+      "id": "2",
+      "nom": "mariama",
+      "email": "mariama@gmail.com",
+      "mdp": "mariama"
+    },
+    {
+      "id": "3HiPKlwkL7E",
+      "nom": "Assane",
+      "email": "assane@gmail.com",
+      "mdp": "assane"
+    },
+    {
+      "id": "pVLFdkM9NLA",
+      "nom": "Astou",
+      "email": "astou@gmail.com",
+      "mdp": "astou"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

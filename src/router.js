@@ -1,5 +1,5 @@
 import { accueil } from "./pages/accueil/accueil.js";
-import { ajouterArticle } from "./pages/ajoutArticle/ajoutArticle.js";
+import { ajouterarticle } from "./pages/ajoutarticle/ajoutarticle.js";
 import { connexion } from "./pages/connexion/connexion.js";
 import { admin } from "./pages/inscription/admin.js";
 import { inscription } from "./pages/inscription/inscription.js";
@@ -10,7 +10,7 @@ const routes = {
     '#/connexion':connexion,
     '#/inscription':inscription,
     '#/admin':admin,
-    '#/ajoutarticle':ajouterArticle 
+    '#/ajoutarticle':ajouterarticle 
 };
 
 function afficherPage(){
@@ -22,9 +22,6 @@ function afficherPage(){
     
     monapp.innerHTML = mapage();
 
-
 }
-
-
 
 export {afficherPage};

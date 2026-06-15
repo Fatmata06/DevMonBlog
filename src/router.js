@@ -22,8 +22,11 @@ function afficherPage(){
     
     monapp.innerHTML = mapage();
 
-    window.addEventListener('hashchange',afficherPage);
 
 }
+    window.addEventListener('hashchange',afficherPage);
+    window.addEventListener('load', afficherPage);
+
+
 
 export {afficherPage};

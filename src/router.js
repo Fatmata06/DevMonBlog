@@ -24,8 +24,6 @@ function afficherPage(){
 
 
 }
-    window.addEventListener('hashchange',afficherPage);
-    window.addEventListener('load', afficherPage);
 
 
 

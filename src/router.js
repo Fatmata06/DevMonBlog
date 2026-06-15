@@ -1,7 +1,7 @@
 import { accueil } from "./pages/accueil/accueil.js";
 import { ajouterarticle } from "./pages/ajoutarticle/ajoutarticle.js";
 import { connexion } from "./pages/connexion/connexion.js";
-import { admin } from "./pages/inscription/admin.js";
+import { admin } from "./pages/admin/admin.js";
 import { inscription } from "./pages/inscription/inscription.js";
 import { notfound } from "./pages/pageNotFound/pageNotFound.js";
 

@@ -41,6 +41,12 @@
       "email": "mamy@gmail.com",
       "mdp": "mamy",
       "id": "oH8IzqcmSag"
+    },
+    {
+      "nom": "Ibrahima",
+      "email": "ibrahima@gmail.com",
+      "mdp": "ibrahima",
+      "id": "BMPNHR_vMqs"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

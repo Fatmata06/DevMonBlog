@@ -24,6 +24,5 @@
       "email": "astou@gmail.com",
       "mdp": "astou"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }

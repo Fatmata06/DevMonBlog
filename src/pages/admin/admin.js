@@ -1,12 +1,62 @@
 function admin() {
-     setTimeout(() => {
+    setTimeout(() => {
         const lienversajoutarticle = document.querySelector('#ajoutarticle');
 
         lienversajoutarticle.addEventListener('click', (rechargement) => {
             rechargement.preventDefault();
             window.location.hash = "#/ajoutarticle";
         });
-       
+
+        const tbody = document.querySelector('tbody');
+        async function ajoutArticle() {
+            try {
+                const tabarticle = await fetch("http://localhost:3000/Articles");
+                const mesarticles = await tabarticle.json();
+                tbody.innerHTML = "";   
+                mesarticles.forEach(article => {
+                    tbody.innerHTML += `
+                        <tr >
+                            <td class= "text-center" ><input type="checkbox" name="" id=""></td>
+                            <td class= "text-center" >${article.Titre}</td>
+                            <td class= "text-center" >${article.Branche}</td>
+                            <td class= "text-center" >${article.Statut}</td>
+                            <td class= "text-center" >${article.DatePub}</td>
+                            <td class= " action justify-center items-center  cursor-pointer flex gap-4" >
+                            <button  class= " btn-modif bg-[#03045E] p-1 text-white rounded">Modifier</button>
+                            <button class= "btnSupp bg-red-500 p-1 text-white rounded" value="${article.id}">Supprimer</button>
+                            </td>
+                        </tr>
+                    `;
+                });
+            }
+            catch {
+                alert("Erreur lors de la recuperation des articles");
+            }
+        }
+        ajoutArticle();
+        tbody.addEventListener('click', async (event)  => {
+            const btnSupp = event.target.closest('.btnSupp')
+            if (btnSupp) {
+                const idArticle =btnSupp.value;
+                if (confirm("Voulez vous supprimer cet article ?")) {
+                    try {
+                        const mesarticles = await fetch(`http://localhost:3000/Articles/${idArticle}`, {
+                            method: "DELETE"
+                        })
+                        if (mesarticles.ok) {
+                            setTimeout(() => {
+                                ajoutArticle();
+                            }, 1000);
+                        }
+                    }
+                    catch (error) {
+                        alert("Erreur lors de la suppression de cet article");
+                    }
+
+                }
+            }
+        });
+
     }, 0);
     return `
     <section id="page-accueil" class="  w-full h-screen flex justify-center">
@@ -49,73 +99,17 @@ function admin() {
                     <table class="w-full">
                         <thead class="bg-[#00B4D8] text-white ">
                             <tr>
-                                <th class="p-4"> <input type="checkbox" name="" id=""> Tout</th>
-                                <th class="p-4">ARTICLE</th>
-                                <th class="p-4">BRANCHE</th>
-                                <th class="p-4">STATUT</th>
-                                <th class="p-4">DATE</th>
-                                <th class="p-4">ACTION</th>
+                                <th class="p-6 text-center"> <input type="checkbox" name="" id=""> Tout</th>
+                                <th class="p-4 text-center">ARTICLE</th>
+                                <th class="p-4 text-center">BRANCHE</th>
+                                <th class="p-4 text-center">STATUT</th>
+                                <th class="p-4 text-center">DATE</th>
+                                <th class="p-4 text-center">ACTION</th>
                             </tr>
                         </thead>
 
-                        <tbody class="divide-y divide-gray-200 ">
-                            <tr class="">
-                                <td class="p-4"><input type="checkbox" name="" id=""></td>
-                                <td class="p-4">Comprendre le rôle du HTML</td>
-                                <td class="p-4">Frontend</td>
-                                <td class="p-4">Publié</td>
-                                <td class="p-4">08/06/2026</td>
-                                <td class="p-4">Action</td>
-                            </tr>
-
-                            <tr class="hover:bg-gray-50">
-                                <td class="p-4"><input type="checkbox" name="" id=""></td>
-                                <td class="p-4">Découvrir Tailwind CSS</td>
-                                <td class="p-4">Frontend</td>
-                                <td class="p-4">Publié</td>
-                                <td class="p-4">08/06/2026</td>
-                                <td class="p-4">Action</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50">
-                                <td class="p-4"><input type="checkbox" name="" id=""></td>
-                                <td class="p-4">Découvrir Tailwind CSS</td>
-                                <td class="p-4">Frontend</td>
-                                <td class="p-4">Publié</td>
-                                <td class="p-4">08/06/2026</td>
-                                <td class="p-4">Action</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50">
-                                <td class="p-4"><input type="checkbox" name="" id=""></td>
-                                <td class="p-4">Découvrir Tailwind CSS</td>
-                                <td class="p-4">Frontend</td>
-                                <td class="p-4">Publié</td>
-                                <td class="p-4">08/06/2026</td>
-                                <td class="p-4">Action</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50">
-                                <td class="p-4"><input type="checkbox" name="" id=""></td>
-                                <td class="p-4">Découvrir Tailwind CSS</td>
-                                <td class="p-4">Frontend</td>
-                                <td class="p-4">Publié</td>
-                                <td class="p-4">08/06/2026</td>
-                                <td class="p-4">Action</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50">
-                                <td class="p-4"><input type="checkbox" name="" id=""></td>
-                                <td class="p-4">Découvrir Tailwind CSS</td>
-                                <td class="p-4">Frontend</td>
-                                <td class="p-4">Publié</td>
-                                <td class="p-4">08/06/2026</td>
-                                <td class="p-4">Action</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50">
-                                <td class="p-4"><input type="checkbox" name="" id=""></td>
-                                <td class="p-4">Découvrir Tailwind CSS</td>
-                                <td class="p-4">Frontend</td>
-                                <td class="p-4">Publié</td>
-                                <td class="p-4">08/06/2026</td>
-                                <td class="p-4">Action</td>
-                            </tr>
+                        <tbody class="divide-y  divide-gray-200  ">
+                           
                         </tbody>
                     </table>
                 </div>

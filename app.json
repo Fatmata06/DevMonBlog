@@ -49,5 +49,34 @@
       "id": "BMPNHR_vMqs"
     }
   ],
+  "Articles": [
+    {
+      "Titre": "Comprendre le rôle  du langage HTML",
+      "Branche": "frontend",
+      "Contenu": "1. Qu’est-ce que le HTML ?L'acronyme HTML signifie HyperText Markup Language, traduit par « langage de balises pour l'hypertexte ». Contrairement aux idées reçues, le HTML n'est pas un langage de programmation. Il s'agit d'un langage de description ou de balisage.L’hypertexte : C'est le système de liens qui connecte les pages web entre elles. C'est ce qui forme la « toile » (le Web).Le balisage : HTML utilise des balises (comme <h1>, <p>, <a>) pour encapsuler et catégoriser les différents blocs d'information.\n\n2. Le rôle principal : Le squelette du siteLe rôle majeur du HTML est de définir la structure sémantique et l'organisation du contenu d'une page web. Il indique précisément au navigateur internet la nature de chaque élément afin que ce dernier puisse l'interpréter correctement.Grâce aux balises HTML, un développeur peut définir :Les titres (du titre principal <h1> aux sous-titres <h2> à <h6>).Les paragraphes de texte (<p>).Les images (<img>) et les contenus multimédias (vidéos, audios).Les liens hypertextes (<a>) pour naviguer vers d'autres pages.Les listes à puces ou ordonnées.Les formulaires de contact ou de connexion.Sans HTML, le navigateur n’afficherait qu'un bloc de texte brut, illisible et sans aucune mise en page.",
+      "Statut": "publie",
+      "DatePub": "2026-06-16",
+      "Avatar": "C:\\fakepath\\logofd.png",
+      "id": "4FsWNgNMcz8"
+    },
+    {
+      "Titre": "CSS : Feuilles de style en cascade",
+      "Branche": "frontend",
+      "Contenu": "CSS (pour Cascading Style Sheets en anglais), soit feuilles de style en cascade, est un langage de feuille de style utilisé pour décrire la présentation d'un document écrit en HTML ou XML (y compris les dialects XML que sont SVG, MathML, ou XHTML). CSS décrit la façon dont les éléments doivent être affichés à l'écran, sur papier, à l'oral ou sur d'autres médias.\n\nCSS est l'un des langages principaux du Web ouvert et a été standardisé par le W3C (angl.). Auparavant, le développement des différentes parties de la spécification CSS était réalisé de façon synchrone, permettant d'avoir une version pour l'ensemble de la recommandation. Vous avez donc pu entendre parler de CSS1, CSS2.1, voire CSS3. Il n'y aura jamais de CSS3 ou de CSS4 ; désormais, tout est simplement « CSS » avec des modules CSS individuels ayant des numéros de version.",
+      "Statut": "publie",
+      "DatePub": "2026-06-16",
+      "Avatar": "C:\\fakepath\\css.svg",
+      "id": "uwwDbuIu7Is"
+    },
+    {
+      "Titre": "JavaScript",
+      "Branche": "frontend",
+      "Contenu": "JavaScript (ou JS en abrégé) est un langage de programmation léger, interprété (ou compilé à la volée) avec des fonctions de première classe. S'il est surtout connu comme langage de script pour les pages web, de nombreux environnements hors navigateur l'utilisent aussi, comme Node.js, Apache CouchDB (angl.) ou Adobe Acrobat (angl.). JavaScript est un langage à prototype, à ramasse-miettes, dynamique, prenant en charge plusieurs paradigmes : impératif, fonctionnel et orienté objet.\n\nLes capacités dynamiques de JavaScript incluent la construction d'objets à l'exécution, les listes de paramètres variables, les fonctions comme variables, la création dynamique de scripts (via eval), l'introspection d'objets (via for...in et les utilitaires Object), et la récupération du code source (les fonctions JavaScript conservent leur texte source, accessible via toString()).\n\nCette section est dédiée au langage JavaScript lui-même, et non aux parties spécifiques aux pages web ou à d'autres environnements hôtes. Pour les API propres aux pages web, consultez API Web et DOM.",
+      "Statut": "publie",
+      "DatePub": "2026-06-16",
+      "Avatar": "C:\\fakepath\\js.svg",
+      "id": "dQfBhF36q88"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
